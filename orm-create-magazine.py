@@ -1,5 +1,5 @@
-from sqlalchemy import Table, Index, Integer, String, Column, Boolean, PrimaryKeyConstraint, UniqueConstraint, ForeignKeyConstraint, create_engine,Text, DateTime
-from sqlalchemy.orm import declarative_base, relationship, Session, Numeric
+from sqlalchemy import Table, Index, Integer, String, Column, Boolean, PrimaryKeyConstraint, UniqueConstraint, ForeignKeyConstraint, create_engine,Text, DateTime, Numeric
+from sqlalchemy.orm import declarative_base, relationship, Session
 from datetime import datetime
 engine = create_engine("postgresql+psycopg2://postgres:123456@10.10.101.193:5432/db2")
 session=Session(bind=engine)
